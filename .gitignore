@@ -5,6 +5,7 @@
 *.tar.xz
 pkg/
 src/
+waybar-expressvpn-status/
 
 # Debian packaging
 debian/files

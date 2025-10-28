@@ -9,6 +9,7 @@ license=('MIT')
 depends=('waybar' 'nodejs' 'expressvpn')
 optdepends=('libnotify: for desktop notifications when toggling VPN')
 makedepends=('git')
+install=$pkgname.install
 source=("git+$url.git#tag=v$pkgver")
 sha256sums=('SKIP')
 

@@ -57,9 +57,22 @@ sudo make uninstall
 
 ## 🔧 Configuration
 
-### Waybar Config
+### Quick Setup (3 steps)
 
-Add this to your `~/.config/waybar/config.jsonc`:
+After installation, you need to add the module to your Waybar configuration:
+
+**1. Add to your modules list** in `~/.config/waybar/config.jsonc`:
+
+```jsonc
+"modules-right": [
+    "custom/expressvpn",  // <-- Add this
+    "network",
+    "pulseaudio",
+    // ... your other modules
+]
+```
+
+**2. Add the module configuration** (copy this anywhere in your config):
 
 ```jsonc
 "custom/expressvpn": {
@@ -76,6 +89,14 @@ Add this to your `~/.config/waybar/config.jsonc`:
     "on-click": "waybar-expressvpn-toggle"
 }
 ```
+
+**3. Reload Waybar:**
+
+```bash
+pkill -SIGUSR2 waybar
+```
+
+That's it! The VPN icon should now appear in your bar.
 
 ### Waybar Style
 

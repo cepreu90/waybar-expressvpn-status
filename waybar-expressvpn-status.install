@@ -1,0 +1,27 @@
+post_install() {
+    echo ""
+    echo "==> waybar-expressvpn-status installed successfully!"
+    echo ""
+    echo "To use this module, add the following to your Waybar config:"
+    echo "  ~/.config/waybar/config.jsonc"
+    echo ""
+    echo "1. Add 'custom/expressvpn' to your modules list:"
+    echo '   "modules-right": ["custom/expressvpn", "network", "pulseaudio", ...]'
+    echo ""
+    echo "2. Add the module configuration:"
+    cat /usr/share/doc/waybar-expressvpn-status/examples/waybar-config.jsonc
+    echo ""
+    echo "3. (Optional) Add styling to ~/.config/waybar/style.css:"
+    echo "   See: /usr/share/doc/waybar-expressvpn-status/examples/waybar-style.css"
+    echo ""
+    echo "4. Reload Waybar:"
+    echo "   pkill -SIGUSR2 waybar"
+    echo ""
+    echo "Example files are available at:"
+    echo "  /usr/share/doc/waybar-expressvpn-status/examples/"
+    echo ""
+}
+
+post_upgrade() {
+    post_install
+}
