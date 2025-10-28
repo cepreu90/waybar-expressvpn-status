@@ -1,0 +1,11 @@
+#custom-expressvpn.connected {
+    color: rgb(48, 135, 48);
+}
+
+#custom-expressvpn.disconnected {
+    color: #a55555;
+}
+
+#custom-expressvpn.connecting {
+    color: #ffaa00;
+}

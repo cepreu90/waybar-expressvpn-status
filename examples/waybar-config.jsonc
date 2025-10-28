@@ -1,0 +1,13 @@
+"custom/expressvpn": {
+    "exec": "waybar-expressvpn-status",
+    "interval": 3,
+    "return-type": "json",
+    "tooltip": true,
+    "format": "{icon}",
+    "format-icons": {
+        "connected": "",
+        "disconnected": "",
+        "connecting": ""
+    },
+    "on-click": "waybar-expressvpn-toggle"
+}

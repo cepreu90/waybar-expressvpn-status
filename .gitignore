@@ -1,0 +1,35 @@
+# Build artifacts
+*.deb
+*.pkg.tar.zst
+*.tar.gz
+*.tar.xz
+pkg/
+src/
+
+# Debian packaging
+debian/files
+debian/*.log
+debian/*.substvars
+debian/waybar-expressvpn-status/
+debian/.debhelper/
+debian/debhelper-build-stamp
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary
+*.tmp
+*.bak

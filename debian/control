@@ -1,0 +1,21 @@
+Source: waybar-expressvpn-status
+Section: utils
+Priority: optional
+Maintainer: Mads Enevoldsen maande20@gmail.com
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.3
+Homepage: https://github.com/cepreu90/waybar-expressvpn-status
+
+Package: waybar-expressvpn-status
+Architecture: all
+Depends: waybar, nodejs, expressvpn
+Recommends: libnotify-bin
+Description: Waybar module for ExpressVPN status and control
+ This package provides custom Waybar modules to display ExpressVPN
+ connection status and toggle the VPN connection with a click.
+ .
+ Features:
+  - Real-time VPN status display
+  - One-click connect/disconnect
+  - Desktop notifications for status changes
+  - Customizable icons and styling
