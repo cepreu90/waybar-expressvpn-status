@@ -82,9 +82,9 @@ After installation, you need to add the module to your Waybar configuration:
     "tooltip": true,
     "format": "{icon}",
     "format-icons": {
-        "connected": "",
-        "disconnected": "",
-        "connecting": ""
+        "connected": "",
+        "disconnected": "",
+        "connecting": ""
     },
     "on-click": "waybar-expressvpn-toggle"
 }
